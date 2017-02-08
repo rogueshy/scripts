@@ -25,7 +25,7 @@ $Printer_Name = 'Badges HR Moscow (redirected ' + $session_id + ')'
 broken driver sometimes could create some Phantom Printers with a name "Zebra ZXP Series 3 USB Card Printer (copy 1)"
 to use this block, simply uncomment the executable lines below #>
 
-# there's a correct ACL for that, which disables all printing to it:
+# there's a correct ACL for that, which disables all printing to it and hides that printer completely from all users:
 # $ACL_Phantom = '/sddl="O:SYG:SYD:(A;CIIO;RC;;;CO)(A;OIIO;RPWPSDRCWDWO;;;CO)(A;OIIO;RPWPSDRCWDWO;;;BA)(A;;LCSWSDRCWDWO;;;BA)"'
 # And some examples for their names:
 # $Phantom_Printer = 'Zebra ZXP Series 3 USB Card Printer (redirected ' + $session_id + ')'
